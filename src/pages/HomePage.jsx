@@ -2,13 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Button, Container, Typography, Box, Grid, Card, CardContent, Avatar, Chip } from "@mui/material";
 import { Disc2, Disc3 } from "lucide-react";
+import banner from "../assets/home/banner.png";
 
 export default function HomePage() {
   return (
-    <div id="home" className="bg-gray-900 text-white min-h-screen flex flex-col">
+    <div id="home" className="bg-gray-900 text-white max-w-screen flex flex-col">
       {/* Navbar */}
       <header className="flex justify-between items-center px-6 py-4 border-b border-gray-800">
-        <h1 className="text-xl font-bold text-white">Comunidad Gamer</h1>
+        <h1 className="text-xl font-bold text-white">Comunidad Threads</h1>
         <div className="flex gap-4">
           <Button variant="outlined" color="inherit" startIcon={<Disc3 size={18} />}>
             Discord
@@ -24,9 +25,12 @@ export default function HomePage() {
 
       {/* Hero */}
       <section className="text-center py-20 bg-gradient-to-b from-gray-900 to-gray-950">
-        <img src="/banner-comunidad.jpg" alt="Arte comunidad" className="mx-auto rounded-xl mb-6 shadow-lg w-full max-w-4xl" />
+        <img 
+        src={banner}
+        alt="Arte comunidad" 
+        className="mx-auto rounded-xl mb-6 shadow-lg w-150 max-w-4xl" />
         <Typography variant="h3" className="font-bold mb-4">
-          De Threads al Game
+          Desarrolladores de videojuegos en Threads
         </Typography>
         <Typography variant="subtitle1" className="mb-6 text-gray-300">
           Únete a crear un videojuego desde cero
@@ -86,7 +90,7 @@ export default function HomePage() {
             <Grid item xs={12} sm={6} md={3} key={idx}>
               <Card className="bg-gray-800">
                 <CardContent className="text-center">
-                  <Typography variant="h6" className="text-white mb-2">
+                  <Typography variant="h6" className="text-black mb-2">
                     {step}
                   </Typography>
                 </CardContent>
@@ -107,7 +111,7 @@ export default function HomePage() {
               <Card className="bg-gray-800">
                 <CardContent className="text-center">
                   <Avatar src={`/foto${n}.jpg`} className="mx-auto mb-4 w-24 h-24" />
-                  <Typography className="text-white">"Me inspiró a crear por primera vez"</Typography>
+                  <Typography className="text-black">"Me inspiró a crear por primera vez"</Typography>
                 </CardContent>
               </Card>
             </Grid>

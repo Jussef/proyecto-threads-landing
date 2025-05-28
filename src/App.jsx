@@ -10,7 +10,7 @@ import ContactPage from "./pages/ContactPage";
 function App() {
   return (
     <Router>
-      <div className="flex flex-col items-center">
+      <div>
         {/* <Button variant="contained" color="primary">
           <a href="/" className="text-white">Home</a>
         </Button>
