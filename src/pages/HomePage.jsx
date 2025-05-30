@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button, Container, Typography, Box, Grid, Card, CardContent, Avatar, Chip } from "@mui/material";
-import { Disc2, Disc3 } from "lucide-react";
+import { FaDiscord } from "react-icons/fa6";
+import { FaThreads } from "react-icons/fa6";
 import banner from "../assets/home/banner.png";
 
 export default function HomePage() {
@@ -11,10 +12,10 @@ export default function HomePage() {
       <header className="flex justify-between items-center px-6 py-4 border-b border-gray-800">
         <h1 className="text-xl font-bold text-white">Comunidad Threads</h1>
         <div className="flex gap-4">
-          <Button variant="outlined" color="inherit" startIcon={<Disc3 size={18} />}>
+          <Button variant="outlined" color="inherit" startIcon={<FaDiscord />}>
             Discord
           </Button>
-          <Button variant="outlined" color="inherit" startIcon={<Disc2 size={18} />}>
+          <Button variant="outlined" color="inherit" startIcon={<FaThreads />}>
             Threads
           </Button>
           <Button variant="contained" color="primary">
