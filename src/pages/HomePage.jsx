@@ -12,15 +12,21 @@ export default function HomePage() {
       <header className="flex justify-between items-center px-6 py-4 border-b border-gray-800">
         <h1 className="text-xl font-bold text-white">Comunidad Threads</h1>
         <div className="flex gap-4">
-          <Button variant="outlined" color="inherit" startIcon={<FaDiscord />}>
-            Discord
-          </Button>
-          <Button variant="outlined" color="inherit" startIcon={<FaThreads />}>
-            Threads
-          </Button>
-          <Button variant="contained" color="primary">
-            Únete
-          </Button>
+          <Link to="/discord">
+            <Button variant="outlined" color="inherit" startIcon={<FaDiscord />}>
+              Discord
+            </Button>
+          </Link>
+          <Link to="/threads">
+            <Button variant="outlined" color="inherit" startIcon={<FaThreads />}>
+              Threads
+            </Button>
+          </Link>
+          <Link to="/unete">
+            <Button variant="contained" color="primary">
+              Únete
+            </Button>
+          </Link>
         </div>
       </header>
 
@@ -36,9 +42,11 @@ export default function HomePage() {
         <Typography variant="subtitle1" className="mb-6 text-gray-300">
           Únete a crear un videojuego desde cero
         </Typography>
-        <Button variant="contained" size="large">
-          Quiero ser parte
-        </Button>
+        <Link to="/unete">
+          <Button variant="contained" size="large">
+            Quiero ser parte
+          </Button>
+        </Link>
       </section>
 
       {/* Quiénes somos y meta */}
@@ -76,9 +84,11 @@ export default function HomePage() {
           ))}
         </div>
         <Typography className="text-sm text-gray-400 mb-4">No necesitas experiencia</Typography>
-        <Button variant="contained" color="secondary">
-          Quiero unirme
-        </Button>
+        <Link to="/unete">
+          <Button variant="contained" color="secondary">
+            Quiero unirme
+          </Button>
+        </Link>
       </section>
 
       {/* Roadmap */}
