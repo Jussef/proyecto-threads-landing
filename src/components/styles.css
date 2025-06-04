@@ -1,0 +1,49 @@
+#about .about-title {
+  color: #7c3aed;
+  background-color: #00ff87;
+  align-self: center;
+  text-align: center;
+}
+#about .about-title2 {
+  color: #00ff87;
+  background-color: #7c3aed;
+  align-self: center;
+  text-align: center;
+}
+
+@keyframes purple-glow {
+  0%,
+  100% {
+    opacity: 0.7;
+    filter: blur(32px);
+  }
+  50% {
+    opacity: 1;
+    filter: blur(48px);
+  }
+}
+.animate-purple-glow {
+  animation: purple-glow 3s ease-in-out infinite;
+}
+
+@keyframes eva01-bounce {
+  0%,
+  100% {
+    transform: translateY(0) scale(1) rotate(0deg);
+  }
+  20% {
+    transform: translateY(-4px) scale(1.05) rotate(-1deg);
+  }
+  40% {
+    transform: translateY(2px) scale(0.98) rotate(1deg);
+  }
+  60% {
+    transform: translateY(-2px) scale(1.03) rotate(-2deg);
+  }
+  80% {
+    transform: translateY(1px) scale(1) rotate(1deg);
+  }
+}
+.animate-eva01-bounce {
+  animation: eva01-bounce 2.2s infinite cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
