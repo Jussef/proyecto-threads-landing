@@ -12,19 +12,14 @@ export default function HomePage() {
       <header className="flex justify-between items-center px-6 py-4 border-b border-gray-800">
         <h1 className="text-xl font-bold text-white">Comunidad Threads</h1>
         <div className="flex gap-4">
-          <Link to="/discord">
+          <Link to="https://discord.gg/SNG2xNeSjJ" target="_blank" rel="noopener noreferrer">
             <Button variant="outlined" color="inherit" startIcon={<FaDiscord />}>
               Discord
             </Button>
           </Link>
-          <Link to="/threads">
+          <Link to="https://www.threads.com/@alienythe/post/DJnAInfynH0?xmt=AQF0QgI-GFPD8ajFRfbsPG9H1aT-n9NKGNT3CGoIWzxQXQ" target="_blank" rel="noopener noreferrer">
             <Button variant="outlined" color="inherit" startIcon={<FaThreads />}>
               Threads
-            </Button>
-          </Link>
-          <Link to="/unete">
-            <Button variant="contained" color="primary">
-              Únete
             </Button>
           </Link>
         </div>
@@ -32,10 +27,7 @@ export default function HomePage() {
 
       {/* Hero */}
       <section className="text-center py-20 bg-gradient-to-b from-gray-900 to-gray-950">
-        <img 
-        src={banner}
-        alt="Arte comunidad" 
-        className="mx-auto rounded-xl mb-6 shadow-lg w-150 max-w-4xl" />
+        <img src={banner} alt="Arte comunidad" className="mx-auto rounded-xl mb-6 shadow-lg w-150 max-w-4xl" />
         <Typography variant="h3" className="font-bold mb-4">
           Desarrolladores de videojuegos en Threads
         </Typography>

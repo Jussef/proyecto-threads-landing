@@ -11,7 +11,7 @@ function App() {
   return (
     <Router>
       <div>
-        <Button variant="contained" color="primary">
+        {/* <Button variant="contained" color="primary">
           <a href="/" className="text-white">Home</a>
         </Button>
         <Button variant="contained" color="secondary">
@@ -19,7 +19,7 @@ function App() {
         </Button>
         <Button variant="contained" color="success">
           <a href="/contact" className="text-white">Contacto</a>
-        </Button>
+        </Button> */}
 
         <Routes>
           <Route path="/" element={<HomePage />} />
